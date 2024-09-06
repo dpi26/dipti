@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>ludo
+    </title>
+<style>
+    body{
+        justify-content: center;
+        display: grid;
+        margin-left: px;
+        margin-top: px;
+    }
+    .outer{
+       display: grid;
+      grid-template-columns: repeat(15,20px) ;
+      grid-template-rows: repeat(15,20px) ;
+      border: 1px solid gray;
+
+    }
+    .item{
+grid-column: 1/7 ;
+grid-row: 1/7;
+border: 20px solid red;
+    }
+    .item_green{
+grid-column: 10/17;
+grid-row: 1/7;
+border: 20px solid green;
+
+    }
+    .item_yellow{
+grid-column: 10/17;
+grid-row: 10/17;
+border: 20px solid yellow;
+    }
+    .item_blue{
+grid-column: 1/7;
+grid-row: 10/17;
+border: 20px solid blue;
+    }
+
+.min_red{
+    height: 20px;
+    width: 20px;
+background-color: white;
+border: 2px solid red;
+border-radius: 50%;
+margin: 7px;
+float: left;
+}
+
+.min_blue{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+background-color: white;
+border: 2px solid blue;
+margin:7px;
+float:left;
+}
+
+.min_green{
+   display: grid;
+   grid-template-columns: repeat(4, 20px);
+   grid-template-rows: repeat(4,20px);
+float: left;
+}
+.green_in{
+grid-column: 1/3;
+grid-row: 1/3;
+margin: 8px;
+}
+.green_in1{
+grid-column: 3/5;
+grid-row: 1/3;
+margin: 8px;
+}
+.green_in2{
+grid-column: 1/3;
+grid-row: 3/5;
+margin: 8px;
+}
+.green_in3{
+grid-column: 3/5;
+grid-row: 3/5;
+margin: 8px;
+}
+
+.item_min{
+    grid-column: 7/10;
+    grid-row: 1/7;
+    background-color: pink;
+border: 1px grey;
+}
+.item_mina{
+    grid-column: 10/17;
+    grid-row:7/10;
+    background-color: pink;
+border: 1px grey;
+}
+.mina{
+    height: 60px;
+    width:120px ;
+    float: left;
+}
+.minaa{
+    height: 20px;
+    width: 20px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+
+
+.item_minb{
+    grid-column: 7/10;
+    grid-row: 10/17;
+    background-color: pink;
+border: 1px grey;
+}
+.item_minc{
+    grid-column: 1/7;
+    grid-row: 7/10;
+    background-color: pink;
+border: 1px grey;
+}
+.min{
+height: 18px;
+width: 18px;
+border: 1px solid gray;
+float: left;
+}
+.minx
+{
+    grid-column: 7/10;
+    grid-row: 7/10;
+    background-color: pink;
+    border: 1px solid gray;
+}
+.minx-trg{
+border-top: 30px solid green;
+border-left: 30px solid red;
+border-right: 30px solid yellow;
+border-bottom: 30px solid blue;
+}
+
+
+</style>
+
+
+</head>
+<body>
+  <div class="outer">
+<div class="item">
+    <div class="min_red"></div>
+    <div class="min_red"></div>
+    <div class="min_red"></div>
+    <div class="min_red"></div>
+</div>
+<div class="item_green">
+    <div class="min_green">
+<div  class="green_in" style="border: 2px solid green; border-radius: 50%;"></div>
+<div  class="green_in1" style="border: 2px solid green; border-radius: 50%;"></div>
+<div  class="green_in2" style="border: 2px solid green; border-radius: 50%;"></div>
+<div  class="green_in3" style="border: 2px solid green; border-radius: 50%;"></div>
+
+    </div>
+</div>
+
+<div class="item_yellow">
+    <div class="min_green">
+        <div  class="green_in" style="border: 2px solid yellow; border-radius: 50%;"></div>
+        <div  class="green_in1" style="border: 2px solid yellow;  border-radius: 50%;"></div>
+        <div  class="green_in2" style="border: 2px solid yellow; border-radius: 50%;"></div>
+        <div  class="green_in3" style="border: 2px solid yellow; border-radius: 50%;"></div>
+        
+            </div> 
+</div>
+<div class="item_blue">
+    <div class="min_blue"></div>
+    <div class="min_blue"></div>
+    <div class="min_blue"></div>
+    <div class="min_blue"></div>
+</div>
+
+
+
+<div class="item_min">
+
+<div class="min"></div>
+<div class="min"></div>
+<div class="min"></div>
+<div class="min"></div>
+<div class="min" style="background-color: green;"></div>
+<div class="min"><span style="color:black; background-color: green;  font-size:18px; padding-top: 8px; padding-left: 3px;">&#9733</span></div>
+<div class="min" ><span style="color:black;  background-attachment: fixed ; font-size:18px; padding-top: 8px; padding-left: 3px;">&#9733</span></div>
+<div class="min" style="background-color: green;"></div>
+<div class="min"></div>
+<div class="min"></div>
+<div class="min" style="background-color: green;"></div>
+<div class="min"></div>
+<div class="min"></div>
+<div class="min" style="background-color: green;"></div>
+<div class="min"></div>
+<div class="min"></div>
+<div class="min" style="background-color: green;"></div>
+<div class="min"></div>
+
+</div>
+
+<div class="item_mina">
+
+<div class="mina">
+<div class="minaa"></div>  
+<div class="minaa"></div>  
+<div class="minaa"></div>    
+<div class="minaa"> <span style="color:black; font-size:20px;  padding-top: 4px;">&#9733</span></div>  
+<div class="minaa"></div>  
+<div class="minaa"></div>  
+<div class="minaa" style="background-color: yellow;"></div>   
+<div class="minaa" style="background-color: yellow;"></div>  
+<div class="minaa" style="background-color: yellow;"></div>  
+<div class="minaa"style="background-color: yellow;"></div>  
+<div class="minaa" style="background-color: yellow;"></div>  
+<div class="minaa"></div>  
+<div class="minaa"></div>  
+<div class="minaa"></div>  
+<div class="minaa"></div>  
+<div class="minaa"></div>  
+<div class="minaa" > <span style="color:black; font-size:20px; background-color: yellow; padding-top: 4px;">&#9733</span></div>  
+<div class="minaa"></div>  
+
+</div>
+</div>
+
+<div class="item_minc">
+
+    <div class="min" ></div>
+    <div class="min" style="background-color: red;"> <span style="color:black; font-size:20px; background-color: red; padding-top: 4px;">&#9733</span></div>
+    <div class="min"></div>
+    <div class="min"></div>
+    <div class="min" ></div>
+    <div class="min"></div>
+    <div class="min"></div>
+    <div class="min" style="background-color: red;"></div>
+    <div class="min" style="background-color: red;"></div>
+    <div class="min" style="background-color: red;"></div>
+    <div class="min" style="background-color: red;"></div>
+    <div class="min" style="background-color: red;"></div>
+    <div class="min"></div>
+    <div class="min"></div>
+    <div class="min"> <span style="color:black; font-size:20px;  padding-top: 9px; padding-left: 3px;">&#9733</span></div>
+    <div class="min"></div>
+    <div class="min"></div>
+    <div class="min"></div>
+
+</div>
+
+<div class="item_minb">
+
+    <div class="min"></div>
+    <div class="min" style="background-color: blue;" ></div>
+    <div class="min" ></div>
+    <div class="min"></div>
+    <div class="min" style="background-color: blue;" ></div>
+    <div class="min" ></div>
+    <div class="min"></div>
+    <div class="min" style="background-color: blue;" ></div>
+    <div class="min"></div>
+    <div class="min"></div>
+    <div class="min" style="background-color: blue;" ></div>
+    <div class="min"> <span style="color:black; font-size:20px;  padding-top: 4px;">&#9733</span></div>
+    <div class="min" style="background-color: blue;" > <span style="color:black; font-size:20px; background-color:blue; padding-top: 4px;">&#9733</span></div>
+    <div class="min" style="background-color: blue;" ></div>
+    <div class="min" ></div>
+    <div class="min"></div>
+    <div class="min"></div>
+    <div class="min"></div>
+  
+</div>
+
+<div class="minx-trg"></div>
+
+  </div> 
+  
+  
+<!-- dise of ludo-->
+
+
+
+</body>
+</html>
